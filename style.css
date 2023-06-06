@@ -24,6 +24,7 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 h1 {
@@ -90,14 +91,12 @@ section .flex {
 
 .text {
   flex: 1;
-  min-width: 500px;
 }
 
 h2 {
   font-size: 80px;
   margin: 30px 0;
   font-weight: 500;
-  line-height: 121px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -131,7 +130,6 @@ section#quote {
 }
 
 section#quote .quote {
-  min-width: 550px;
   background: url(images/Layer_1.svg) no-repeat;
   background-position-y: bottom;
   background-position-x: right;
@@ -150,7 +148,6 @@ section#WWYM .text {
   display: flex;
   align-items: center;
   padding: 20px;
-  min-width: 500px;
 }
 
 section#WWYM table {
@@ -215,4 +212,5 @@ footer .copyright {
   color: var(--beige);
   border-top: solid 1px var(--beige);
   padding: 10px 0 0 0;
+  line-height: 20px;
 }
