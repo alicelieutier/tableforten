@@ -1,0 +1,52 @@
+/*
+ *	WebFont Package Licensed to Alice Lieutier
+ */
+
+/* Shift Book */
+@font-face {
+	font-family: 'Shift';
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-Book.eot'); /* IE9 Compat Modes */
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('http://pauvre.org/~alice/fonts/woff2/ShiftWeb-Book.woff2') format('woff2'), /* Super Modern Browsers */
+			url('http://pauvre.org/~alice/fonts/woff/ShiftWeb-Book.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Shift Book Italic */
+@font-face {
+	font-family: 'Shift';
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-BookItalic.eot'); /* IE9 Compat Modes */
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('http://pauvre.org/~alice/fonts/woff2/ShiftWeb-BookItalic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('http://pauvre.org/~alice/fonts/woff/ShiftWeb-BookItalic.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Shift Medium */
+@font-face {
+	font-family: 'Shift';
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-Medium.eot'); /* IE9 Compat Modes */
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('http://pauvre.org/~alice/fonts/woff2/ShiftWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+			url('http://pauvre.org/~alice/fonts/woff/ShiftWeb-Medium.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Shift Medium Italic */
+@font-face {
+	font-family: 'Shift';
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-MediumItalic.eot'); /* IE9 Compat Modes */
+	src:	url('http://pauvre.org/~alice/fonts/eot/ShiftWeb-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('http://pauvre.org/~alice/fonts/woff2/ShiftWeb-MediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('http://pauvre.org/~alice/fonts/woff/ShiftWeb-MediumItalic.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+

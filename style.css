@@ -4,11 +4,9 @@
   --red: #EE3819;
   --yellow: #EFC316;
 }
-/* shift book + shift medium */
 
 body {
   background-color: #1E1E1E;
-  font-family: shift, serif;
   font-style: normal;
   font-weight: 300;
   color: black;
@@ -22,13 +20,95 @@ body {
   flex-direction: column;
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
 }
 
-h1 {
-  font-size: 3em;
+h1.big-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4em;
+  line-height: 1.2em;
+}
+
+p.big-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+p.medium-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4em;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+}
+
+td.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+p, td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+p.copyright {
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--beige);
+  border-top: solid 1px var(--beige);
+  padding: 10px 0 0 0;
+  line-height: 1.2em;
+}
+
+.wrap {
+  max-width: 1300px;
+  padding: 0 2.5em;
+  margin: 0 auto;
+}
+
+.narrow-wrap {
+  max-width: 900px;
+  padding: 0 3em;
+  margin: 0 auto;
+}
+
+section {
+  padding: 3em 0 0 0;
 }
 
 section#top {
@@ -40,7 +120,7 @@ section#top img {
 }
 
 #logo {
-  margin-top: 225px;
+  margin-top: 150px;
 }
 
 #big_table_illustration {
@@ -48,28 +128,20 @@ section#top img {
   margin-bottom: 157px;
 }
 
-section#intro {
-  background-color: var(--green);
+#mobile-banner {
+  margin: 8em 0;
+  padding: 1em;
 }
 
-.wrap {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
+section#intro {
+  background-color: var(--green);
+  padding: 6em 0 0 0;
 }
 
 .border {
   width: 209px;
-  height: 200px;
+  height: 3em;
   border-bottom: 5px solid black;
-}
-
-.big-text {
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 77px;
-  text-align: left;
-  margin: 40px 0;
 }
 
 section#intro .decor {
@@ -87,53 +159,35 @@ section .flex {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1em;
+}
+
+section .reverse {
+  flex-direction: row-reverse;
 }
 
 .text {
   flex: 1;
 }
 
-h2 {
-  font-size: 80px;
-  margin: 30px 0;
-  font-weight: 500;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-h3 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 57px;
-  line-height: 77px;
-}
-
-p {
-  font-size: 35px;
-  margin: 20px 0;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
 .bottom-image {
   display: flex;
-  padding-top: 40px;
   flex-direction: column-reverse;
-  margin: auto;
+  padding-top: 1em;
+  margin: 0 auto;
 }
 
 section#quote {
-  background-color: var(--red);
   color: var(--beige);
+  /* background: url(images/Layer_1.svg) no-repeat;
+  background-size: auto;
+  background-position-y: top;
+  background-position-x: left; */
+  background-color: var(--red);
 }
 
 section#quote .quote {
-  background: url(images/Layer_1.svg) no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
-  margin: 60px;
+  padding: 1em;
 }
 
 .beige.border {
@@ -154,20 +208,9 @@ section#WWYM table {
   border-collapse: collapse;
 }
 
-section#WWYM td.title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 54px;
-}
-
 section#WWYM td {
   border-top: solid 2px black;
   padding: 20px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
 }
 
 section#form {
@@ -197,20 +240,10 @@ footer {
 footer .column {
   display: flex;
   flex-direction: column;
-  margin: 60px;
+  margin: 3em;
   align-items: center;
 }
 
 footer .column img{
-  margin-bottom: 20px;
-}
-
-
-footer .copyright {
-  font-size: 16px;
-  text-align: center;
-  color: var(--beige);
-  border-top: solid 1px var(--beige);
-  padding: 10px 0 0 0;
-  line-height: 20px;
+  margin-bottom: 1em;
 }

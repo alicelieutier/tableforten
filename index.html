@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,19 +20,26 @@
 </head>
 <body>
   <section id="top">
-    <div id="logo">
-      <img src="images/TableforTen_logo.svg" alt="Table for Ten logo.">
+    <div class="mobile-only">
+      <div id="mobile-banner">
+        <img width="700" src="images/mobile_banner.svg" alt="Table for Ten">
+      </div>
     </div>
-    <div id="big_table_illustration">
-      <img src="images/large_brunch_table.svg" alt="An illustration of two people eating croissants sat a a large table full of brunch type food.">
+    <div class="desktop-only">
+      <div id="logo">
+        <img width="260" src="images/TableforTen_logo.svg" alt="Table for Ten logo.">
+      </div>
+      <div id="big_table_illustration">
+        <img width="1115" src="images/large_brunch_table.svg" alt="An illustration of two people eating croissants sat a a large table full of brunch type food.">
+      </div>
     </div>
   </section>
   <section id="intro">
-    <div class="wrap">
+    <div class="narrow-wrap">
       <div class="black border"></div>
-      <h3 class="big-text">
+      <h1 class="big-text">
         Table for Ten is a monthly brunch gathering in Central London, focused on creating genuine human connections through meaningful conversations. 
-      </h3>
+      </h1>
       <div class="decor"></div>
     </div>
   </section>
@@ -39,10 +47,10 @@
     <div class="wrap flex">
       <div class="text">
         <h2>How it works</h2>
-        <p>Table for Ten brunches are invitation-only, and I curate the group each month to ensure that it is both diverse and connected by common interests. All I ask of you is to come with an open mind and be yourself.</p>
+        <p class="medium-text">Table for Ten brunches are invitation-only, and I curate the group each month to ensure that it is both diverse and connected by common interests. All I ask of you is to come with an open mind and be yourself.</p>
       </div>
       <div class="bottom-image">
-        <img src="images/coffee_duo.svg" alt="Two women talking and drinking coffee." height="450">
+        <img width="450" src="images/coffee_duo.svg" alt="Two women talking and drinking coffee.">
       </div>
     </div>
   </section>
@@ -53,15 +61,12 @@
       </div>
       <div class="text">
         <div class="beige border"></div>
-        <h3>To get an invitation, simply leave your details in the form at the bottom of the page.</h3>
+        <p class="big-text">To get an invitation, simply leave your details in the form at the bottom of the page.</p>
       </div>
     </div>
   </section>
   <section id="WWYM">
-    <div class="wrap flex">
-      <div class="bottom-image">
-        <img src="images/cakestand.svg" alt="An illustration of a cake on a table." height="835">
-      </div>
+    <div class="wrap flex reverse">
       <div class="text">
         <table>
           <tr>
@@ -74,7 +79,7 @@
           </tr>
           <tr>
             <td class="title">You</td>
-            <td>We welcome all people who are interested in meeting others and having open conversations. Our past attendees include entrepreneurs, artists, developers, and more.</td>
+            <td>We welcome all people who are interested in meeting others and having open conversations.<br>Our past attendees include entrepreneurs, artists, developers, and more.</td>
           </tr>
           <tr>
             <td class="title">Me</td>
@@ -82,22 +87,32 @@
           </tr>
         </table>
       </div>
+      <div class="bottom-image">
+        <img width="450" src="images/cakestand.svg" alt="An illustration of a cake on a table.">
+      </div>
     </div>
   </section>
   <section id="form">
-    <div class="wrap">
+    <div class="narrow-wrap">
       <div class="decor"></div>
       <h2>Join our community</h2>
-      <p>To get an invitation, leave your details in the form and I&apos;ll get in touch!</p>
+      <p class="big-text">To get an invitation, leave your details in the form and I&apos;ll get in touch!</p>
       <div class="form">
         <div class="ml-embedded" data-form="0o0v85"></div>
       </div>
     </div>
   </section>
   <footer>
-    <div class="column">
-      <img width="682" src="images/horizontal_logo.svg" alt="Table for Ten logo">
-      <img width="784" src="images/10heads.svg" alt="ten people">
+    <div class="desktop-only">
+      <div class="column">
+        <img width="600" src="images/horizontal_logo.svg" alt="Table for Ten logo">
+        <img width="700" src="images/10heads.svg" alt="ten people">
+      </div>
+    </div>
+    <div class="mobile-only">
+      <div class="column">
+      <img width="600" src="images/tft_footer_mobile.svg" alt="Table for Ten logo">
+    </div>
     </div>
     <div id="footer-links">
       <!-- FAQ? T&A ? -->
