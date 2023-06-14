@@ -8,6 +8,7 @@ Deploy by pushing to github.
 Check the settings [here](https://github.com/alicelieutier/tableforten/settings/pages).
 
 TODO:
+[] fonts - renew pauvre.org SSL to serve fonts over https
 [] improve form (design + feedback)
 [] add a contact email (`info@` ?)
 [] create the welcome email
